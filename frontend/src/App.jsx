@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import { Routes,Route } from 'react-router-dom'
 import Footer from './components/Footer'
 import Collection from './pages/Collection'
+import Cart from './pages/Cart'
 import Product from './pages/Product'
 import SearchBar from './components/SearchBar'
 import { ToastContainer, toast } from 'react-toastify';
@@ -19,6 +20,7 @@ const App = () => {
       <Route path="/" element={<Home/>}/>
       <Route path="/collection" element={<Collection/>}/>
       <Route path='/product/:productId' element={<Product/>}/>
+      <Route path='/cart' element={<Cart/>}/>
     </Routes>
     <Footer/>
     </div>
