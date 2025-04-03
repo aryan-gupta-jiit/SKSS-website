@@ -9,6 +9,7 @@ import Product from './pages/Product'
 import SearchBar from './components/SearchBar'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PlaceOrder from './pages/PlaceOrder'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Route path="/collection" element={<Collection/>}/>
       <Route path='/product/:productId' element={<Product/>}/>
       <Route path='/cart' element={<Cart/>}/>
+      <Route path='/place-order' element={<PlaceOrder/>}/>
     </Routes>
     <Footer/>
     </div>
